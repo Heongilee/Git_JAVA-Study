@@ -19,9 +19,16 @@ class MyFrame extends JFrame{
 		c.add(text, BorderLayout.CENTER);
 		text.addKeyListener(new MyKeyL());
 		
-		c.add(sd, BorderLayout.SOUTH);
+		sd.setPaintLabels(true);
+		sd.setPaintTicks(true);
+		sd.setPaintTrack(true);
+		sd.setMinimum(0);
+		sd.setMaximum(100);
+		sd.setMajorTickSpacing(20);
+		sd.setMinorTickSpacing(5);
 		sd.addChangeListener(new MySliderL());
 		sd.setValue(0);
+		c.add(sd, BorderLayout.SOUTH);
 		
 		setSize(300, 300);
 		setVisible(true);

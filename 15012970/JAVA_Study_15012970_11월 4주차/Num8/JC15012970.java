@@ -27,7 +27,7 @@ class MyFrame extends JFrame{
 		rbtn1.addItemListener(new L());
 		rbtn2.addItemListener(new L());
 		
-		setSize(300, 300);
+		setSize(500, 500);
 		setVisible(true);
 	}
 	private class L implements ItemListener{
